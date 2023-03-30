@@ -7,15 +7,17 @@ const Footer = () => {
     <Box sx={{
         width: 'auto',
         height: 'fit-content',
+        display: 'flex',
         justifyContent: "center",
-        alignContent: "center",
+        alignItems: "center",
         margin: '50px 10px 30px 10px',
     }}>
       <Typography
         variant="subtitle"
         sx={{
           color: "#2CA6DB",
-          padding: '50px'
+          padding: '50px',
+          textAlign: 'center'
         }}
       >
         Copyright © 2022 Avatar Meher Baba Perpetual Public Charitable Trust,
