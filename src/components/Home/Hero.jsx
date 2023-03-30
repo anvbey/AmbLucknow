@@ -1,5 +1,4 @@
 import { Box, Typography } from '@mui/material'
-// import image1
 
 const Hero = () => {
     return (
@@ -16,21 +15,31 @@ const Hero = () => {
                 // background: 'yellow',
                 justifyContent: 'center',
                 alignItems: 'center',
-                flex: '65%',
+                flex: '70%',
             }}>
                 <Typography sx={{
                     fontSize: { xs: '30px', sm: '40px', md: '50px', lg: '60px', xl: '100px' },
                     color: '#2CA6DB',
                 }}>Avatar Meher Baba</Typography>
-                <Typography fontSize={'40px'}>Things that are Real are given and received in Silence.</Typography>
+                <Box sx={{
+                    background: '#CA7233',
+                    height: '0px',
+                    width: '429px',
+                    border:'2px solid #CA7233',
+                    marginBottom: '15px'
+                    
+                }}></Box>
+                <Typography fontSize={'30px'}>"Things that are Real are given and received in Silence."</Typography>
             </Box>
             {/* Photogragh */}
             <Box sx={{
                 // background: 'green',
+                marginTop : '30px',
                 marginRight: '10px',
-                flex: '35%'
+                marginLeft: '30px',
+                flex: '30%'
             }}>
-                <img alt="img" src={'/assets/image.png'} width="550" height="650" />
+                <img alt="img" src={'/assets/image.png'} width="450" height="550" />
             </Box>
         </Box >
     );
