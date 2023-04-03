@@ -8,6 +8,7 @@ import Cont from "./container/Contact";
 import { Box } from "@mui/material";
 import Donate from "./container/Donate";
 import Archives from './container/Archives'
+import MSIrani from "./container/MSIrani";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="contact" element={<Cont />} />
         <Route path="donate" element={<Donate />} />
         <Route path='archives' element={<Archives/>}/>
+        <Route path='msirani' element={<MSIrani/>}/>
       </Routes>
       <Footer />
     </Box>

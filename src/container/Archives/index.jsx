@@ -22,14 +22,6 @@ const grid = () => {
           <Box2/>
           <Box2/>
           <Box2/>
-        </Box>
-        <Box sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-around'
-        }}>
-          <Box2/>
-          <Box2/>
           <Box2/>
         </Box>
         <Box sx={{
@@ -37,6 +29,17 @@ const grid = () => {
           flexDirection: 'row',
           justifyContent: 'space-around'
         }}>
+          <Box2/>
+          <Box2/>
+          <Box2/>
+          <Box2/>
+        </Box>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-around'
+        }}>
+          <Box2/>
           <Box2/>
           <Box2/>
           <Box2/>
