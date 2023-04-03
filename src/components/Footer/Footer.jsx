@@ -6,11 +6,14 @@ const Footer = () => {
   return (
     <Box sx={{
         width: 'auto',
-        height: 'fit-content',
+        height: '100px',
         display: 'flex',
         justifyContent: "center",
-        alignItems: "center",
-        margin: '50px 10px 30px 10px',
+        alignItems: "flex-end",
+        padding: '50px 10px 0px 10px',
+        position: 'relative',
+        bottom: '0px',
+        background: '#f0ebf0'
     }}>
       <Typography
         variant="subtitle"

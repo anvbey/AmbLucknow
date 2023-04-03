@@ -4,20 +4,24 @@ import Navbar from './components/Navbar';
 import Home from './container/Home';
 import About from './container/About';
 import Footer from './components/Footer/Footer';
+import Cont from './container/Contact';
+import { Box} from '@mui/material'
 
 function App() {
-  const styles = {
-    backgroundColor: '#f0ebf0',
-  };
+  
   return (
-    <div style={styles}>
+    <Box sx={{
+      backgroundColor: '#f0ebf0',
+      minHeight: '100%',
+    }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="contact" element={<Cont/>}/>
       </Routes>
       <Footer/>
-    </div>
+    </Box>
   );
 }
 
