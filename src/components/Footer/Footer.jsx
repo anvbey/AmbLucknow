@@ -1,26 +1,28 @@
-import { Typography } from '@mui/material';
+import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
 const Footer = () => {
   return (
-    <Box sx={{
-        width: 'auto',
-        height: '100px',
-        display: 'flex',
+    <Box
+      sx={{
+        width: "auto",
+        height: "100px",
+        display: "flex",
         justifyContent: "center",
         alignItems: "flex-end",
-        padding: '50px 10px 0px 10px',
-        position: 'relative',
-        bottom: '0px',
-        background: '#f0ebf0'
-    }}>
+        padding: "50px 10px 0px 10px",
+        position: "relative",
+        bottom: "0px",
+        background: "#f0ebf0",
+      }}
+    >
       <Typography
         variant="subtitle"
         sx={{
           color: "#2CA6DB",
-          padding: '50px',
-          textAlign: 'center'
+          padding: "50px",
+          textAlign: "center",
         }}
       >
         Copyright © 2022 Avatar Meher Baba Perpetual Public Charitable Trust,
