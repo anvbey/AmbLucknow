@@ -1,19 +1,19 @@
 import React from "react";
 import { Box } from "@mui/material";
 
-const box2 = () => {
+const box5 = () => {
   return (
     <Box
       sx={{
-        background: "grey",
-        width: "200px",
-        height: "200px",
+        background: "black",
+        width: "250px",
+        height: "250px",
         margin: "10px",
       }}
     >
-      Box2
+      Box3
     </Box>
   );
 };
 
-export default box2;
+export default box5;

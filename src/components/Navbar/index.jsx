@@ -10,22 +10,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import ViewListIcon from "@mui/icons-material/ViewList";
-import ViewModuleIcon from "@mui/icons-material/ViewModule";
-import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
-import ToggleButton from "@mui/material/ToggleButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { Link } from "react-router-dom";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["About", "MSIrani", "Library", "Archives", "Updates", "Contact"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [view, setView] = React.useState("list");
-
-  const handleChange = (event, nextView) => {
-    setView(nextView);
-  };
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -36,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: "#FFFFFF" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -55,8 +45,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-          
-            <Link to="about" >LOGO</Link>
+            <Link to="about">LOGO</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -119,22 +108,24 @@ function Navbar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "black", display: "block" }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <ToggleButtonGroup
-            orientation="vertical"
-            value={view}
-            exclusive
-            onChange={handleChange}
-          >
-            <ToggleButton value="list" aria-label="list">
-              <ViewListIcon />
-            </ToggleButton>
-          </ToggleButtonGroup>
+          <Box>
+            <Button
+              variant="contained"
+              style={{
+                borderRadius: 15,
+                minWidth: "100px",
+                marginRight: "50px",
+              }}
+            >
+              Donate
+            </Button>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>

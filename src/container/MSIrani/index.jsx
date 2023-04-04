@@ -12,10 +12,10 @@ const MSIrani = () => {
         margin: "50px 100px 50px 100px",
       }}
     >
-      <Name/>
-      <Sound/>
-      <Images/>
-      <Content/>
+      <Name />
+      <Sound />
+      <Images />
+      <Content />
     </Box>
   );
 };

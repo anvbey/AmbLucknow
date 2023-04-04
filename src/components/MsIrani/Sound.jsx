@@ -1,14 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import Dropdown from "./Dropdown";
 
 const Sound = () => {
   return (
     <Box>
       <Box>
         <Typography variant="h6">Sounds like:</Typography>
-        
       </Box>
 
       <Box

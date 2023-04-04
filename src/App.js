@@ -7,8 +7,9 @@ import Footer from "./components/Footer/Footer";
 import Cont from "./container/Contact";
 import { Box } from "@mui/material";
 import Donate from "./container/Donate";
-import Archives from './container/Archives'
+import Archives from "./container/Archives";
 import MSIrani from "./container/MSIrani";
+import Library from "./container/Library";
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Cont />} />
         <Route path="donate" element={<Donate />} />
-        <Route path='archives' element={<Archives/>}/>
-        <Route path='msirani' element={<MSIrani/>}/>
+        <Route path="archives" element={<Archives />} />
+        <Route path="msirani" element={<MSIrani />} />
+        <Route path="library" element={<Library />} />
       </Routes>
       <Footer />
     </Box>
