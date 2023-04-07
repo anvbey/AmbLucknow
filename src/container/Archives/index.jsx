@@ -1,7 +1,8 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Box1 from "../../components/Archives/box1";
-import Box2 from "../../components/Archives/box2";
+import Box2 from "../../components/Archives/Box2";
+import { archives_data } from "../../dummy_data/archive_data";
 
 const grid = () => {
   return (
@@ -18,39 +19,23 @@ const grid = () => {
         <Box1 />
         <Box
           sx={{
+            width: "1000px",
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-around",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            gap: "10px",  
           }}
         >
-          <Box2 />
-          <Box2 />
-          <Box2 />
-          <Box2 />
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
-          <Box2 />
-          <Box2 />
-          <Box2 />
-          <Box2 />
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
-          <Box2 />
-          <Box2 />
-          <Box2 />
-          <Box2 />
+          {archives_data.map((data) => {
+            return (
+              <Box2
+                id={data.id}
+                title={data.title}
+                image={data.image}
+              />
+            );
+          })}
         </Box>
       </Box>
     </Box>

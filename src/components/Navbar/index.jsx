@@ -51,7 +51,7 @@ function Navbar() {
 
   const handleCloseNavMenu = () => {
 
-    
+
     setAnchorElNav(null);
   };
 
@@ -115,7 +115,7 @@ function Navbar() {
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Link to={page.link} key={page}>
