@@ -12,7 +12,35 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 
-const pages = ["About", "MSIrani", "Library", "Archives", "Updates", "Contact"];
+// const pages = ["About", "MSIrani", "Library", "Archives", "Updates", "Contact"];
+const pages = [
+  {
+
+    label: 'About',
+    link: '/about'
+  },
+  {
+    label: 'MSIrani',
+    link: '/msirani'
+  },
+  {
+    label: 'Library',
+    link: '/library'
+  },
+  {
+    label: 'Archives',
+    link: '/archives'
+  },
+  {
+    label: 'Updates',
+    link: '/updates'
+  },
+  {
+    label: 'Contact',
+    link: '/contact'
+  },
+]
+
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -45,7 +73,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            <Link to="about">LOGO</Link>
+            <Link to="/">LOGO</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -79,7 +107,7 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">{page.label}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -105,26 +133,32 @@ function Navbar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "black", display: "block" }}
-              >
-                {page}
-              </Button>
+              <Link to={page.link} key={page}>
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "black", display: "block" }}
+                >
+                  {page.label}
+                </Button>
+              </Link>
             ))}
           </Box>
           <Box>
-            <Button
-              variant="contained"
-              style={{
-                borderRadius: 15,
-                minWidth: "100px",
-                marginRight: "50px",
-              }}
-            >
-              Donate
-            </Button>
+            <Link to='/donate' style={{
+              textDecoration: "none",
+            }}>
+              <Button
+                variant="contained"
+                style={{
+                  borderRadius: 15,
+                  minWidth: "100px",
+                  marginRight: "50px",
+                }}
+              >
+                Donate
+              </Button>
+            </Link>
           </Box>
         </Toolbar>
       </Container>
