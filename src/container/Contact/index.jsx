@@ -8,9 +8,9 @@ const Cont = () => {
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        height: '560px'
       }}
     >
       <Contact />

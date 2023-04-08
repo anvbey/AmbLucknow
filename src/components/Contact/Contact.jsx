@@ -3,7 +3,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <Box>
+    <Box sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flex: '1',
+    }}>
       <Typography
         variant="h2"
         sx={{

@@ -10,6 +10,7 @@ import Donate from "./container/Donate";
 import Archives from "./container/Archives";
 import MSIrani from "./container/MSIrani";
 import Library from "./container/Library";
+import Updates from "./container/Update/Updates";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="contact" element={<Cont />} />
         <Route path="donate" element={<Donate />} />
         <Route path="archives" element={<Archives />} />
+        <Route path="updates" element={<Updates/>}/>
         <Route path="msirani" element={<MSIrani />} />
         <Route path="library" element={<Library />} />
       </Routes>
